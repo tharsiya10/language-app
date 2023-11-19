@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CleanWordActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="236dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="300dp"
+            android:layout_height="71dp"
+            android:layout_margin="7dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+            <RadioButton
+                android:id="@+id/known"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="mots appris">
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/dst"
+                android:text="mots vers langue">
+
+            </RadioButton>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/langue_dst"
+                android:hint="langue dest">
+            </EditText>
+        </RadioGroup>
+        <Button
+            android:id="@+id/suppr"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Supprimer"
+            ></Button>
+    </LinearLayout>
+
+</LinearLayout>
